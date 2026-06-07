@@ -137,7 +137,7 @@
             <!-- Timeline / Bio -->
             <div class="w-full md:w-1/2 z-10">
                 <h2 class="font-serif text-4xl md:text-6xl text-gold mb-2">Lion Nishi Jain</h2>
-                <h3 class="font-sans text-sm tracking-[0.2em] text-ivory uppercase mb-12">President 2026-27</h3>
+                <h3 class="font-sans text-sm tracking-[0.2em] text-ivory uppercase mb-12">Incoming President</h3>
                 
                 <div class="border-l border-gold/30 pl-8 space-y-12 relative">
                     <div class="relative">
@@ -196,6 +196,41 @@
                 <h3 class="font-serif text-3xl mb-4 text-ivory">Lion Sangeeta Jatia</h3>
                 <p class="text-sm font-light text-gray-400 leading-relaxed max-w-sm">
                     Past International Director, recognized for her profound service and numerous prestigious awards, carrying the torch of leadership and goodwill across global initiatives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4.5: GUESTS OF HONOUR -->
+    <section class="py-24 px-6 max-w-6xl mx-auto gs-reveal border-t border-gold/10">
+        <h2 class="font-serif text-3xl md:text-5xl text-center text-gold mb-20">Guests of Honour</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            
+            <!-- Guest of Honour 1 -->
+            <div class="flex flex-col items-center text-center group cursor-default">
+                <div class="w-48 h-48 rounded-full p-2 border border-gold/30 mb-8 transition duration-700 group-hover:border-gold relative">
+                    <div class="absolute inset-2 rounded-full overflow-hidden">
+                        <img src="https://i.postimg.cc/CMGmGnQQ/Whats-App-Image-2026-06-07-at-7-46-16-PM.jpg" alt="Lion Pramil Rungta" class="w-full h-full object-cover gs-color-reveal transition-all duration-[2000ms]">
+                    </div>
+                </div>
+                <h4 class="text-gold uppercase tracking-[0.2em] text-xs mb-3 font-semibold">Guest of Honour</h4>
+                <h3 class="font-serif text-3xl mb-4 text-ivory">Lion Pramil Rungta</h3>
+                <p class="text-sm font-light text-gray-400 leading-relaxed max-w-sm">
+                    District Governor (E) LY-2026-27
+                </p>
+            </div>
+
+            <!-- Guest of Honour 2 -->
+            <div class="flex flex-col items-center text-center group cursor-default">
+                <div class="w-48 h-48 rounded-full p-2 border border-gold/30 mb-8 transition duration-700 group-hover:border-gold relative">
+                    <div class="absolute inset-2 rounded-full overflow-hidden">
+                        <img src="https://i.postimg.cc/zfHkVyhF/manju-aunty.jpg" alt="Lion Manju Chamaria" class="w-full h-full object-cover gs-color-reveal transition-all duration-[2000ms]">
+                    </div>
+                </div>
+                <h4 class="text-gold uppercase tracking-[0.2em] text-xs mb-3 font-semibold">Guest of Honour</h4>
+                <h3 class="font-serif text-3xl mb-4 text-ivory">Lion Manju Chamaria</h3>
+                <p class="text-sm font-light text-gray-400 leading-relaxed max-w-sm">
+                    District Governor LY-2025-26, Lions District 322B1
                 </p>
             </div>
         </div>
@@ -303,7 +338,7 @@
                 </div>
                 
                 <div class="pt-4 border-t border-gold/10">
-                    <label class="block text-xs uppercase tracking-widest text-gold mb-4 text-center">Your Photo Required</label>
+                    <label class="block text-xs uppercase tracking-widest text-gold mb-4 text-center">Identity Photo Required</label>
                     
                     <img id="photo-preview" class="w-full h-48 object-cover hidden mb-4 border border-gold/30">
                     
@@ -438,7 +473,7 @@
         // Form Submission & API Integration 
         document.getElementById('reg-form').addEventListener('submit', async (e) => {
             e.preventDefault();
-            if(!photoData) { alert("A photo is required for your pass."); return; }
+            if(!photoData) { alert("An identity photo is required for your pass."); return; }
 
             const btnSubmit = document.getElementById('btn-submit');
             btnSubmit.textContent = "Processing Heritage...";
