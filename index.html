@@ -438,7 +438,7 @@
         // Form Submission & API Integration 
         document.getElementById('reg-form').addEventListener('submit', async (e) => {
             e.preventDefault();
-            if(!photoData) { alert("An identity photo is required for your pass."); return; }
+            if(!photoData) { alert("A photo is required for your pass."); return; }
 
             const btnSubmit = document.getElementById('btn-submit');
             btnSubmit.textContent = "Processing Heritage...";
